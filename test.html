@@ -9,5 +9,22 @@
 
  <body>
   test
+<script type="text/javascript">
+<!--
+function onSuccessGeolocation(position) {
+	alert(position.coords.latitude +","+ position.coords.longitude);
+}
+
+function onErrorGeolocation() {
+	alert("failed"); 
+}	
+
+if (navigator.geolocation) {
+	navigator.geolocation.getCurrentPosition(onSuccessGeolocation, onErrorGeolocation);
+} else {
+
+}
+//-->
+</script>  
  </body>
 </html>
