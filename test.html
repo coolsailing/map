@@ -13,11 +13,12 @@ Test - 2017-02-10
 <script type="text/javascript">
 <!--
 function onSuccessGeolocation(position) {
-	alert(position.coords.latitude +","+ position.coords.longitude);
+	//alert(position.coords.latitude +","+ position.coords.longitude);
+	document.write("You are here - "+ position.coords.latitude +","+ position.coords.longitude );
 }
 
 function onErrorGeolocation() {
-	alert("failed"); 
+	//alert("failed"); 
 }	
 
 if (navigator.geolocation) {
