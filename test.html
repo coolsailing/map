@@ -21,6 +21,8 @@ function onSuccessGeolocation(position) {
 	
 	//alert("현재 위치는 - "+ position.coords.latitude +","+ position.coords.longitude);
 	document.write("You are here - "+ position.coords.latitude +","+ position.coords.longitude );
+	window.open("http://www.foxcc.kr/map/my-map.html?lat="+ lat +"&lng="+ lng +"");
+	
 }
 
 function onErrorGeolocation() {
@@ -35,6 +37,6 @@ if (navigator.geolocation) {
 //-->
 </script>  
 	 
-<a href="http://www.foxcc.kr/map/my-map.html?lat="+ lat +"&lng="+ lng +"" target="_blank">See the map</a>	 
+<!--<a href="http://www.foxcc.kr/map/my-map.html?lat="+ lat +"&lng="+ lng +"" target="_blank">See the map</a>//-->	 
  </body>
 </html>
