@@ -8,11 +8,17 @@
  </head>
 
  <body>
-Test - 2017-02-10
+	 <p>Test - 2017-02-10</p>
+	 <a href="http://www.foxcc.kr/map/my-map.html?" target="_blank">See the map</a>
 	 
 <script type="text/javascript">
 <!--
+var lat = lng = "";
+	
 function onSuccessGeolocation(position) {
+	lat = position.coords.latitude;
+	lng = position.coords.longitude;
+	
 	alert("현재 위치는 - "+ position.coords.latitude +","+ position.coords.longitude);
 	document.write("You are here - "+ position.coords.latitude +","+ position.coords.longitude );
 }
@@ -28,5 +34,7 @@ if (navigator.geolocation) {
 }
 //-->
 </script>  
+	 
+<a href="http://www.foxcc.kr/map/my-map.html?lat="+ lat +"&lng="+ lng +"" target="_blank">See the map</a>	 
  </body>
 </html>
